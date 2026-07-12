@@ -56,11 +56,28 @@ export default function OpeningScreen({ onEnter }) {
           — Le Bar des Mariés —
         </motion.p>
 
-        <h1 className="font-heading text-5xl md:text-6xl font-light text-bistre dark:text-foreground leading-[1.1] mb-8">
+        <h1 className="font-heading text-5xl md:text-6xl font-light text-bistre dark:text-foreground leading-[1.1] mb-6">
           Bienvenue au
           <br />
           <span className="italic gold-text">Bar des Mariés</span>
         </h1>
+
+        <motion.p
+          className="font-heading text-2xl md:text-3xl italic gold-text mb-2"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.8 }}
+        >
+          Amine <span className="text-muted-foreground text-lg">&amp;</span> Yassmine
+        </motion.p>
+        <motion.p
+          className="gold-text tracking-[0.3em] text-[10px] uppercase font-light mb-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+        >
+          18 Juillet 2026
+        </motion.p>
 
         <div className="gold-divider-tapered w-32 mx-auto mb-8" />
 

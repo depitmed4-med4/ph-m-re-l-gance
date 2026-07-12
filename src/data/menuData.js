@@ -72,6 +72,13 @@ export const mocktails = [
     price: 'Un sourire',
     image: 'https://media.base44.com/images/public/6a5291d63fc16333fa2db591/bfb708ef3_generated_image.png',
   },
+  {
+    name: 'La Tendresse',
+    ingredients: ['Pomme', 'Miel', 'Citron', 'Eau gazeuse'],
+    description: "La douceur d'un instant suspendu.",
+    price: 'Un sourire',
+    image: 'https://media.base44.com/images/public/6a5291d63fc16333fa2db591/5188d7bc7_generated_image.png',
+  },
 ];
 
 export const icedCoffees = [

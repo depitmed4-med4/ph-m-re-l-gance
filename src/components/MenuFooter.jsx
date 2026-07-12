@@ -34,10 +34,13 @@ export default function MenuFooter() {
         </motion.p>
 
         <div className="mt-12">
-          <p className="gold-text tracking-[0.3em] text-[10px] uppercase font-light">
-            Bar des Mariés
+          <p className="font-heading text-2xl italic gold-text mb-2">
+            Amine <span className="text-muted-foreground text-base">&amp;</span> Yassmine
           </p>
-          <p className="text-[11px] text-muted-foreground/50 mt-2 font-light italic">
+          <p className="gold-text tracking-[0.3em] text-[10px] uppercase font-light">
+            18 Juillet 2026
+          </p>
+          <p className="text-[11px] text-muted-foreground/50 mt-4 font-light italic">
             Avec tout notre amour
           </p>
         </div>

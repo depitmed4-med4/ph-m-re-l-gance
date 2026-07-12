@@ -42,6 +42,22 @@ function MenuContent() {
           >
             Bar des Mariés
           </motion.h1>
+          <motion.p
+            className="font-heading text-xl md:text-2xl italic gold-text mt-3"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.6 }}
+          >
+            Amine <span className="text-muted-foreground text-base">&amp;</span> Yassmine
+          </motion.p>
+          <motion.p
+            className="gold-text tracking-[0.3em] text-[10px] uppercase font-light mt-2"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.7 }}
+          >
+            18 Juillet 2026
+          </motion.p>
         </div>
 
         <DrinkSection
