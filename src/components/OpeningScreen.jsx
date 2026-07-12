@@ -21,7 +21,7 @@ export default function OpeningScreen({ onEnter }) {
         className="absolute inset-0"
         style={{
           background:
-            'linear-gradient(180deg, rgba(252,249,245,0.82) 0%, rgba(245,237,224,0.78) 50%, rgba(237,227,208,0.82) 100%)',
+            'linear-gradient(180deg, rgba(252,249,245,0.95) 0%, rgba(245,237,224,0.93) 50%, rgba(237,227,208,0.95) 100%)',
         }}
       />
       <GoldenParticles count={22} />
@@ -43,6 +43,7 @@ export default function OpeningScreen({ onEnter }) {
 
       <motion.div
         className="relative z-10 text-center px-8 max-w-md"
+        style={{ textShadow: '0 2px 15px rgba(252,249,245,0.95), 0 1px 8px rgba(252,249,245,0.8)' }}
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5, delay: 0.2, ease: 'easeOut' }}
@@ -81,12 +82,12 @@ export default function OpeningScreen({ onEnter }) {
 
         <div className="gold-divider-tapered w-32 mx-auto mb-8" />
 
-        <p className="font-body text-sm md:text-base text-muted-foreground leading-relaxed mb-3 font-light">
+        <p className="font-body text-sm md:text-base text-bistre leading-relaxed mb-3 font-light">
           Nous sommes heureux de partager avec vous
           <br />
           cette soirée inoubliable.
         </p>
-        <p className="font-body text-sm md:text-base text-muted-foreground leading-relaxed mb-12 font-light italic">
+        <p className="font-body text-sm md:text-base text-bistre leading-relaxed mb-12 font-light italic">
           Découvrez nos créations préparées spécialement
           <br />
           pour célébrer l'amour.
