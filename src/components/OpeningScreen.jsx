@@ -63,18 +63,18 @@ export default function OpeningScreen({ onEnter }) {
         </h1>
 
         <motion.p
-          className="font-heading text-2xl md:text-3xl italic gold-text mb-2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.8 }}
+          className="font-heading text-4xl md:text-6xl italic gold-text mb-4 leading-tight"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2, delay: 0.8, ease: 'easeOut' }}
         >
-          Amine <span className="text-muted-foreground text-lg">&amp;</span> Yassmine
+          Amine <span className="text-muted-foreground text-2xl md:text-3xl not-italic font-light">&amp;</span> Yassmine
         </motion.p>
         <motion.p
-          className="gold-text tracking-[0.3em] text-[10px] uppercase font-light mb-8"
+          className="gold-text tracking-[0.3em] text-sm md:text-xl uppercase font-light mb-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
+          transition={{ duration: 1, delay: 1.1 }}
         >
           18 Juillet 2026
         </motion.p>
@@ -94,13 +94,15 @@ export default function OpeningScreen({ onEnter }) {
 
         <motion.button
           onClick={onEnter}
-          className="group relative inline-flex items-center gap-3 px-12 py-4 rounded-full border border-gold/40 text-gold tracking-[0.2em] text-xs md:text-sm uppercase font-light overflow-hidden transition-all duration-500 hover:border-gold"
-          whileHover={{ scale: 1.04 }}
-          whileTap={{ scale: 0.98 }}
+          className="group relative inline-flex items-center gap-3 px-14 py-5 rounded-full bg-gold text-ivory tracking-[0.25em] text-sm md:text-base uppercase font-medium shadow-[0_8px_30px_rgba(166,137,82,0.4)] transition-all duration-500 hover:shadow-[0_12px_40px_rgba(166,137,82,0.55)]"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.97 }}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.4 }}
         >
           <span className="relative z-10">Entrer</span>
-          <ChevronRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
-          <div className="absolute inset-0 bg-gold/8 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
+          <ChevronRight className="w-5 h-5 relative z-10 transition-transform duration-300 group-hover:translate-x-1.5" />
         </motion.button>
       </motion.div>
     </motion.div>

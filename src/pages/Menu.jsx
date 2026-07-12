@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Moon, Sun, Wine, Flower2, Coffee } from 'lucide-react';
+import { Moon, Sun, Flower2 } from 'lucide-react';
 import LoadingScreen from '@/components/LoadingScreen';
 import OpeningScreen from '@/components/OpeningScreen';
 import DrinkSection from '@/components/DrinkSection';
 import MenuFooter from '@/components/MenuFooter';
 import { FloatingFlorals, GoldenParticles } from '@/components/Decor';
-import { cocktails, mocktails, icedCoffees } from '@/data/menuData';
+import { mocktails } from '@/data/menuData';
 
 function MenuContent() {
   return (
@@ -61,27 +61,11 @@ function MenuContent() {
         </div>
 
         <DrinkSection
-          eyebrow="Cocktails"
-          title="Cocktails d'Amour"
-          subtitle="Cinq créations pétillantes et spiritueuses, chacune baptisée d'un nom d'amour."
-          icon={<Wine className="w-7 h-7 gold-text mx-auto" strokeWidth={1} />}
-          drinks={cocktails}
-        />
-
-        <DrinkSection
           eyebrow="Mocktails"
           title="Mocktails d'Amour"
-          subtitle="Cinq créations sans alcool, fruitées et romantiques, pour célébrer chaque facette de l'amour."
+          subtitle="Six créations sans alcool, fruitées et romantiques, pour célébrer chaque facette de l'amour."
           icon={<Flower2 className="w-7 h-7 gold-text mx-auto" strokeWidth={1} />}
           drinks={mocktails}
-        />
-
-        <DrinkSection
-          eyebrow="Café Glacé"
-          title="Café Glacé"
-          subtitle="Cinq cafés glacés gourmands, la fraîcheur veloutée d'un instant suspendu."
-          icon={<Coffee className="w-7 h-7 gold-text mx-auto" strokeWidth={1} />}
-          drinks={icedCoffees}
         />
 
         <MenuFooter />
