@@ -122,6 +122,34 @@ export function GoldDivider({ className = '', width = 'w-32' }) {
   return <div className={`gold-divider-tapered ${width} ${className}`} />;
 }
 
+/* Floral divider — horizontal SVG with central flower and vines */
+export function FloralDivider({ className = '', width = 'w-56' }) {
+  return (
+    <div className={`flex items-center justify-center ${width} ${className}`}>
+      <svg viewBox="0 0 200 30" className="w-full h-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* Left vine */}
+        <path d="M5 15 Q35 10 65 15" stroke="var(--gold)" strokeWidth="0.5" opacity="0.35" strokeLinecap="round" />
+        <ellipse cx="20" cy="12" rx="4" ry="1.5" fill="var(--gold)" opacity="0.2" transform="rotate(-20 20 12)" />
+        <ellipse cx="40" cy="18" rx="4" ry="1.5" fill="var(--gold)" opacity="0.15" transform="rotate(15 40 18)" />
+        <ellipse cx="55" cy="13" rx="3" ry="1.2" fill="var(--gold)" opacity="0.18" transform="rotate(-10 55 13)" />
+        {/* Center flower */}
+        <g transform="translate(100, 15)">
+          {[0, 45, 90, 135, 180, 225, 270, 315].map((angle) => (
+            <ellipse key={angle} cx="0" cy="-5" rx="2.5" ry="5" fill="var(--gold)" opacity="0.22" transform={`rotate(${angle})`} />
+          ))}
+          <circle cx="0" cy="0" r="2.5" fill="var(--gold)" opacity="0.4" />
+          <circle cx="0" cy="0" r="1.2" fill="var(--gold-light)" opacity="0.6" />
+        </g>
+        {/* Right vine */}
+        <path d="M135 15 Q165 20 195 15" stroke="var(--gold)" strokeWidth="0.5" opacity="0.35" strokeLinecap="round" />
+        <ellipse cx="145" cy="17" rx="3" ry="1.2" fill="var(--gold)" opacity="0.18" transform="rotate(10 145 17)" />
+        <ellipse cx="160" cy="12" rx="4" ry="1.5" fill="var(--gold)" opacity="0.15" transform="rotate(-15 160 12)" />
+        <ellipse cx="180" cy="18" rx="4" ry="1.5" fill="var(--gold)" opacity="0.2" transform="rotate(20 180 18)" />
+      </svg>
+    </div>
+  );
+}
+
 /* Reusable section header */
 export function SectionHeader({ eyebrow, title, subtitle, icon }) {
   return (
@@ -143,7 +171,7 @@ export function SectionHeader({ eyebrow, title, subtitle, icon }) {
       <h2 className="font-heading text-4xl md:text-5xl font-light text-bistre dark:text-foreground italic mb-4">
         {title}
       </h2>
-      <GoldDivider className="mx-auto mb-5" />
+      <FloralDivider className="mx-auto mb-5" />
       {subtitle && (
         <p className="font-body text-sm md:text-base text-muted-foreground max-w-md mx-auto leading-relaxed font-light text-balance">
           {subtitle}

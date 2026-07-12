@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Moon, Sun, Flower2 } from 'lucide-react';
+import { Moon, Sun, Flower2, Coffee } from 'lucide-react';
 import LoadingScreen from '@/components/LoadingScreen';
 import OpeningScreen from '@/components/OpeningScreen';
 import DrinkSection from '@/components/DrinkSection';
 import MenuFooter from '@/components/MenuFooter';
-import { FloatingFlorals, GoldenParticles } from '@/components/Decor';
-import { mocktails } from '@/data/menuData';
+import { FloatingFlorals, GoldenParticles, FloralDivider } from '@/components/Decor';
+import { mocktails, icedCoffees } from '@/data/menuData';
 
 function MenuContent() {
   return (
@@ -66,6 +66,25 @@ function MenuContent() {
           subtitle="Six créations sans alcool, fruitées et romantiques, pour célébrer chaque facette de l'amour."
           icon={<Flower2 className="w-7 h-7 gold-text mx-auto" strokeWidth={1} />}
           drinks={mocktails}
+        />
+
+        {/* Floral separator */}
+        <motion.div
+          className="flex justify-center py-6"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
+          <FloralDivider width="w-64" />
+        </motion.div>
+
+        <DrinkSection
+          eyebrow="Café Glacé"
+          title="Café Glacé"
+          subtitle="Cinq cafés glacés gourmands, la fraîcheur veloutée d'un instant suspendu."
+          icon={<Coffee className="w-7 h-7 gold-text mx-auto" strokeWidth={1} />}
+          drinks={icedCoffees}
         />
 
         <MenuFooter />
