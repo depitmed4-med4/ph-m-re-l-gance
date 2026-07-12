@@ -52,11 +52,11 @@ export const mocktails = [
     image: 'https://media.base44.com/images/public/6a5291d63fc16333fa2db591/7c6c58ed7_generated_image.png',
   },
   {
-    name: "L'Éternelle Promesse",
-    ingredients: ['Passion', 'Mangue', 'Citron vert', 'Miel'],
-    description: "Le serment doré d'un amour sans fin.",
+    name: 'Le Jardin Secret',
+    ingredients: ['Menthe fraîche', 'Citron vert', 'Sirop de canne', 'Eau gazeuse'],
+    description: "La fraîcheur d'un secret murmuré à deux.",
     price: 'Un sourire',
-    image: 'https://media.base44.com/images/public/6a5291d63fc16333fa2db591/4c044e889_generated_image.png',
+    image: 'https://media.base44.com/images/public/6a5291d63fc16333fa2db591/ce127f0b0_generated_image.png',
   },
   {
     name: 'Le Bonheur à Deux',
