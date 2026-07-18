@@ -63,7 +63,7 @@ function MenuContent() {
         <DrinkSection
           eyebrow="Mocktails"
           title="Mocktails d'Amour"
-          subtitle="Six créations sans alcool, fruitées et romantiques, pour célébrer chaque facette de l'amour."
+          subtitle="Sept créations sans alcool, fruitées et romantiques, pour célébrer chaque facette de l'amour."
           icon={<Flower2 className="w-7 h-7 gold-text mx-auto" strokeWidth={1} />}
           drinks={mocktails}
         />

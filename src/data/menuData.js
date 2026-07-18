@@ -79,11 +79,18 @@ export const mocktails = [
     price: 'Un sourire',
     image: 'https://media.base44.com/images/public/6a5291d63fc16333fa2db591/5188d7bc7_generated_image.png',
   },
+  {
+    name: "Le Rêve d'Azur",
+    ingredients: ['Menthe fraîche', 'Citron vert', 'Curaçao bleu', 'Eau gazeuse'],
+    description: "L'infini bleu d'un rêve partagé à deux.",
+    price: 'Un sourire',
+    image: 'https://media.base44.com/images/public/6a5291d63fc16333fa2db591/e9921bad3_generated_image.png',
+  },
 ];
 
 export const icedCoffees = [
   {
-    name: 'Latte glacé',
+    name: 'Café latté glacé',
     ingredients: ['Espresso', 'Lait froid', 'Glaçons', 'Vanille'],
     description: "La fraîcheur veloutée d'un après-midi d'été.",
     price: 'Un sourire',
@@ -97,24 +104,24 @@ export const icedCoffees = [
     image: 'https://media.base44.com/images/public/6a5291d63fc16333fa2db591/db3b107e0_generated_image.png',
   },
   {
-    name: 'Caramel Frappuccino',
+    name: 'Café latté glacé au caramel',
+    ingredients: ['Espresso', 'Lait froid', 'Caramel', 'Glaçons'],
+    description: "L'or fondu dans la douceur du lait.",
+    price: 'Une prière pour les mariés',
+    image: 'https://media.base44.com/images/public/6a5291d63fc16333fa2db591/d3bc699ab_generated_image.png',
+  },
+  {
+    name: 'Frappuccino glacé',
+    ingredients: ['Café', 'Lait', 'Glace pilée', 'Chantilly'],
+    description: "Le nuage glacé d'un instant suspendu.",
+    price: 'Un sourire',
+    image: 'https://media.base44.com/images/public/6a5291d63fc16333fa2db591/d5f65b3f7_generated_image.png',
+  },
+  {
+    name: 'Frappuccino glacé au caramel',
     ingredients: ['Café', 'Lait', 'Caramel', 'Glace pilée', 'Chantilly'],
     description: "L'or fondu sur un nuage glacé.",
-    price: 'Un sourire',
-    image: 'https://media.base44.com/images/public/6a5291d63fc16333fa2db591/50dffdc6f_generated_image.png',
-  },
-  {
-    name: 'Mocha Frappuccino',
-    ingredients: ['Café', 'Lait', 'Chocolat', 'Glace pilée', 'Chantilly'],
-    description: "Le cacao dansé sur la fraîcheur.",
     price: 'Une prière pour les mariés',
-    image: 'https://media.base44.com/images/public/6a5291d63fc16333fa2db591/60d2cd720_generated_image.png',
-  },
-  {
-    name: 'Affogato',
-    ingredients: ['Glace vanille', 'Espresso chaud', 'Cacao'],
-    description: "L'éphémère rencontre de la glace et du feu.",
-    price: 'Un sourire',
-    image: 'https://media.base44.com/images/public/6a5291d63fc16333fa2db591/3152e2750_generated_image.png',
+    image: 'https://media.base44.com/images/public/6a5291d63fc16333fa2db591/50dffdc6f_generated_image.png',
   },
 ];
